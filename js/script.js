@@ -36,3 +36,31 @@ Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andia
 */
 
 
+let evenOrOdd = prompt('pari o dispari?');
+
+let userNumber = getRndInteger(1,5);
+console.log('usernumber' + userNumber)
+
+let pcNumber = getRndInteger(1,5);
+console.log('pc number' + pcNumber);
+
+function evenOdd(num1,num2) {
+    let flag = ''
+    let sum = num1 + num2
+    if (sum % 2 === 0) {
+        flag = 'even'
+    } else {
+        flag = 'odd'
+    }
+    return flag
+}
+
+let result = evenOdd(userNumber, pcNumber)
+
+console.log(result)
+
+if (result === oddOrEven){
+    console.log('hai vinto')
+    } else {
+        console.log('ritenta')
+    }
