@@ -3,7 +3,7 @@ Palidroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
-
+/*
 let typedWord = prompt('inserisci una parola')
 
 function palindrom(typedWord) {
@@ -22,7 +22,7 @@ function palindrom(typedWord) {
 richiesta = palindrom(typedWord)
 
 console.log("provadi " + richiesta)
-
+*/
 /*
 Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -36,13 +36,14 @@ Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andia
 */
 
 
-let evenOrOdd = prompt('pari o dispari?');
+let evenOrOdd = prompt('odd or even?');
+console.log('user choise: ' + evenOrOdd);
 
 let userNumber = getRndInteger(1,5);
-console.log('usernumber' + userNumber)
+console.log('usernumber: ' + userNumber)
 
 let pcNumber = getRndInteger(1,5);
-console.log('pc number' + pcNumber);
+console.log('pc number: ' + pcNumber);
 
 function evenOdd(num1,num2) {
     let flag = ''
@@ -59,7 +60,7 @@ let result = evenOdd(userNumber, pcNumber)
 
 console.log(result)
 
-if (result === oddOrEven){
+if (result === evenOrOdd){
     console.log('hai vinto')
     } else {
         console.log('ritenta')
